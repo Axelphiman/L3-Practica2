@@ -1,6 +1,6 @@
 from nodo import Nodo
 
-"Hola"
+
 # auxiliar
 def buildUtil(In, post, inStrt, inEnd, pIndex):
     # Caso base
