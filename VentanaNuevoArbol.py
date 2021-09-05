@@ -1,13 +1,18 @@
 from tkinter import *
 import tkinter as tk
 from tkinter import messagebox
-
+from auxiliar2 import postOrder
+from arbolBinario import ArbolBinario
 class VentanaArbol:
     def __init__(self):
 
         def addTree():
             cadenaArbol.set(text_box.get())
-            print(cadenaArbol.get())
+            arbol = ArbolBinario()
+            arbol.buildTree(cadenaArbol)
+            postOrder(arbol.root)
+            print(" ------------------- ")
+
         # Propiedades de la ventana
         windowBinaryTree = Tk()
         cadenaArbol = StringVar()

@@ -4,3 +4,6 @@ class Nodo:
         self.dato = dato
         self.left = left
         self.right = right
+    def __repr__(self):
+        return str(self.dato)
+
